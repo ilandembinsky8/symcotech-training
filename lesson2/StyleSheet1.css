@@ -1,0 +1,104 @@
+﻿html, body{
+    height:100%;
+}
+
+body {
+    padding:0px;
+    margin:0px;
+    font-family:Arial;
+    font-size:18px;
+    text-align:right;
+    direction:rtl;  
+}
+
+div{
+    box-sizing:border-box;
+    border-radius:8px;
+}
+
+.topSection{
+    float:right;
+    width:100%;
+    margin-bottom:5%;
+    height:100%;
+}
+
+
+.innerSection {
+    margin: 0px auto;
+    width: 90%;
+    height:100%;
+    padding-top:20px;
+}
+
+.smallWebPart {
+    float: right;
+    width: 29%;
+    margin-left: 2%;
+    height: 40%;
+    background-color: #EAEAEA;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+    .smallWebPart:nth-child(3){
+        margin-left:0%;
+    }
+
+    .smallWebPart:first-child{
+        width:38%;
+    }
+
+    .smallWebPart:last-child {
+        width: 100%;
+    }
+
+    .smallWebPart .title {
+        float: right;
+        width: 100%;
+        font-size: 2em;
+        margin-bottom: 10px
+    }
+
+    .smallWebPart .text {
+        float: right;
+        width: 100%;
+        font-size: 1em
+    }
+
+
+
+@media only screen and (max-width: 1200px) {
+    body{
+        font-size:15px;
+    }
+    .smallWebPart {
+        width: 48%;
+        margin-left: 2%;
+    }
+
+        .smallWebPart:nth-child(3) {
+            margin-left: 2%;
+        }
+
+        .smallWebPart:first-child, .smallWebPart:last-child {
+            width: 48%;
+            margin-left: 2%;
+        }
+}
+
+@media only screen and (max-width: 800px) {
+    .smallWebPart {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+        .smallWebPart:nth-child(3) {
+            margin-left: 0%;
+        }
+
+        .smallWebPart:first-child, .smallWebPart:last-child {
+            width: 100%;
+            margin-left: 0%;
+        }
+}
